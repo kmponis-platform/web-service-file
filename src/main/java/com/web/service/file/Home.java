@@ -12,9 +12,9 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
  * Home.java - Use: code bellow
  * ApplicationInitializer.java - Use: class
  * - Access:
- * localhost:8080/web-service-ecdl
+ * localhost:8080/web-service-file
  * - Swagger:
- * localhost:8080/web-service-ecdl/swagger-ui.html
+ * localhost:8080/web-service-file/swagger-ui.html
  */
 @Configuration
 @EnableWebMvc

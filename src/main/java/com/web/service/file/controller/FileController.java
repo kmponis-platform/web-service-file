@@ -3,22 +3,20 @@ package com.web.service.file.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import com.web.service.file.service.ExcelService;
+import com.web.service.file.service.FileService;
 import io.swagger.annotations.ApiOperation;
 
 @RestController
-@RequestMapping(value = "/excel")
-public class ExcelController {
+public class FileController {
 
   @Autowired
-  private ExcelService excelService;
+  private FileService fileService;
 
-  @ApiOperation(value = "Open excel file")
+  @ApiOperation(value = "Open file")
   @PostMapping(value = "/open")
   public void open(@RequestBody String filePath) {
-    excelService.openDocument(filePath);
+    fileService.openDocument(filePath);
   }
 
 }

@@ -4,10 +4,10 @@ import java.awt.Desktop;
 import java.io.File;
 import java.io.IOException;
 import org.springframework.stereotype.Component;
-import com.web.service.file.service.ExcelService;
+import com.web.service.file.service.FileService;
 
 @Component
-public class ExcelServiceImpl implements ExcelService {
+public class FileServiceImpl implements FileService {
 
   @Override
   public void openDocument(String filePath) {

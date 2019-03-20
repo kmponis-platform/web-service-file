@@ -1,9 +1,9 @@
 package com.web.service.file.service;
 
-public interface ExcelService {
+public interface FileService {
 
   /**
-   * Method to open excel documents.
+   * Method to open documents.
    * 
    * @param (String) filePath
    */
